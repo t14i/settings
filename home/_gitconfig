@@ -1,6 +1,6 @@
 [user]
-	name = nab
-	email = napu1031@gmail.com
+	name = takamatsutomoaki
+	email = takamatsutomoaki@gmail.com
 [color]
     ui = auto
     status=auto
@@ -14,5 +14,3 @@
     co=checkout
     br=branch
     st=status
-[gui]
-	recentrepo = /Users/nab/settings

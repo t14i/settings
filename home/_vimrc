@@ -12,10 +12,10 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " After install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile
 NeoBundle 'Shougo/vimproc'
 
- " My Bundles here:
- "
- " Note: You don't set neobundle setting in .gvimrc!
- " Original repos on github
+" My Bundles here:
+"
+" Note: You don't set neobundle setting in .gvimrc!
+" Original repos on github
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Shougo/neocomplcache'
@@ -24,6 +24,15 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'oceandeep'
+"NeoBundle 'alpaca_tags'
+"NeoBundle 'neosnippet'
+"NeoBundle 'swtich.vim'
+"NeoBundle 'rubocop'
+"NeoBundle 'vim-rails'
+"NeoBundle 'unite-rails'
+"NeoBundle 'vim-endwise'
+"NeoBundle 'ruby-matchit'
+"NeoBundle 'vim-ref'
 
 filetype plugin indent on     " Required!
 "
@@ -106,3 +115,4 @@ nnoremap <silent> ,ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mr
 
 "" matchit.vim
 source $VIMRUNTIME/macros/matchit.vim "for ruby do end
+
