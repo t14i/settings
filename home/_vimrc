@@ -23,6 +23,7 @@ NeoBundle 'Shougo/vimproc.vim', {
 "
 " Note: You don't set neobundle setting in .gvimrc!
 " Original repos on github
+" Reference : http://qiita.com/jnchito/items/5141b3b01bced9f7f48f
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Shougo/neocomplcache'
@@ -31,15 +32,23 @@ NeoBundle 'Shougo/unite.vim'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'oceandeep'
-"NeoBundle 'alpaca_tags'
-"NeoBundle 'neosnippet'
-"NeoBundle 'swtich.vim'
-"NeoBundle 'rubocop'
-"NeoBundle 'vim-rails'
-"NeoBundle 'unite-rails'
-"NeoBundle 'vim-endwise'
-"NeoBundle 'ruby-matchit'
-"NeoBundle 'vim-ref'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'alpaca-tc/alpaca_tags'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'basyura/unite-rails'
+NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'ruby-matchit'
+NeoBundle 'thinca/vim-ref'
+NeoBundle 'nathanaelkane/vim-indent-guides'
+NeoBundle 'vim-scripts/AnsiEsc.vim'
+NeoBundle 'bronson/vim-trailing-whitespace'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'grep.vim'
+NeoBundle 'thinca/vim-quickrun'
 
 filetype plugin indent on     " Required!
 "
@@ -52,9 +61,10 @@ filetype plugin indent on     " Required!
 NeoBundleCheck
 
 """ color
+" visual
+autocmd ColorScheme * highlight Visual term=reverse ctermbg=243 guibg=#403D3D
 syntax on
-"colorscheme oceandeep
-"colorscheme molokai
+colorscheme molokai
 
 """ zenkaku
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue
@@ -77,10 +87,10 @@ set whichwrap=b,s,h,l,<,>,[,]
 set backspace=indent,eol,start
 
 """ tab
-set tabstop=4
+set tabstop=2
 set expandtab
 set smarttab
-set shiftwidth=4
+set shiftwidth=2
 set shiftround
 
 """ search
@@ -120,6 +130,22 @@ nnoremap <silent> ,uu :<C-u>Unite buffer file_mru<CR>
 "all
 nnoremap <silent> ,ua :<C-u>UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
 
+" open NERDTree when without file
+if !argc()
+    autocmd vimenter * NERDTree|normal gg3j
+endif
+
 "" matchit.vim
 source $VIMRUNTIME/macros/matchit.vim "for ruby do end
 
+"" vim-indent-guides
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=235
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=238
+let g:indent_guides_enable_on_vim_startup=1
+
+"" vimgrep result to quickfix
+autocmd QuickFixCmdPost *grep* cwindow
+
+"" macvim copy to clipboard
+set clipboard=unnamed,autoselect

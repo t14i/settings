@@ -209,7 +209,9 @@ xterm|xterm-color|kterm|kterm-color)
     ;;
 esac
 
-
 ## load user .zshrc configuration file
 #
 [ -f ${HOME}/.zshrc.local ] && source ${HOME}/.zshrc.local
+
+# nonomatch
+setopt nonomatch
