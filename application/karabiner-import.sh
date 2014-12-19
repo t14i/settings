@@ -2,22 +2,26 @@
 
 cli=/Applications/Karabiner.app/Contents/Library/bin/karabiner
 
-$cli set remap.copy_paste_winstyle_new_tab 1
+$cli set remap.find_winstyle_no_term 1
+/bin/echo -n .
+$cli set repeat.initial_wait 300
 /bin/echo -n .
 $cli set remap.undo_winstyle_no_term 1
 /bin/echo -n .
-$cli set remap.select_all_winstyle_no_term 1
+$cli set remap.jis_command2eisuukana_prefer_command 1
 /bin/echo -n .
-$cli set remap.save_winstyle_no_term 1
+$cli set remap.copy_paste_winstyle_new_tab 1
 /bin/echo -n .
-$cli set remap.find_winstyle_no_term 1
+$cli set repeat.wait 23
 /bin/echo -n .
 $cli set remap.pc_style_copy_paste 1
-/bin/echo -n .
-$cli set remap.jis_command2eisuukana_prefer_command 1
 /bin/echo -n .
 $cli set remap.new_winstyle_no_term 1
 /bin/echo -n .
 $cli set remap.copy_paste_winstyle_new_browser_tab 1
+/bin/echo -n .
+$cli set remap.select_all_winstyle_no_term 1
+/bin/echo -n .
+$cli set remap.save_winstyle_no_term 1
 /bin/echo -n .
 /bin/echo
