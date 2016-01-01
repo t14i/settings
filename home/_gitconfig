@@ -1,16 +1,19 @@
 [user]
-	name = ttomoaki
+	name = Tomoaki Takamatsu
 	email = takamatsutomoaki@gmail.com
 [color]
     ui = auto
-    status=auto
-    diff=auto
+	status = auto
+	diff = auto
+	branch = auto
 [push]
     default=current
 [core]
-    editor = vim
+	editor = vim -c \"set fenc=utf-8\"
     pager  = lv -c
 [alias]
     co=checkout
     br=branch
     st=status
+[url "https://github.com/"]
+	insteadOf = git://github.com/

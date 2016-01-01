@@ -1,0 +1,2 @@
+ARGV = %w(--spaces --indent_count 2) + ARGV
+load '/Users/tomoaki.takamatsu/.rbenv/shims/rbeautify'

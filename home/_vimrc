@@ -3,7 +3,9 @@ if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/.vim/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+call neobundle#end()
 
 " Let NeoBundle manage NeoBundle
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -149,3 +151,9 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 "" macvim copy to clipboard
 set clipboard=unnamed,autoselect
+
+"" quickfix
+nnoremap [q :cprevious<CR>   " next
+nnoremap ]q :cnext<CR>       " previous
+nnoremap [Q :<C-u>cfirst<CR> " first
+nnoremap ]Q :<C-u>clast<CR>  " last
