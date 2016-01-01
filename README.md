@@ -14,6 +14,9 @@ Initial setting for mac
 change setting for track pad
 install x code / command line tools
 
+zsh
+oh-my-zsh
+
 chrome
 google日本語入力
 Karabiner
