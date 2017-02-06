@@ -11,9 +11,16 @@
 [core]
 	editor = vim -c \"set fenc=utf-8\"
     pager  = lv -c
+	excludesfile = /Users/Tomoaki/.gitignore_global
 [alias]
     co=checkout
     br=branch
     st=status
 [url "https://github.com/"]
 	insteadOf = git://github.com/
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree 2.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

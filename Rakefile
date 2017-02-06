@@ -25,13 +25,3 @@ task "home" do
         `cd $HOME && ln -s #{fullpath} #{file.gsub(/^_/, '.')}`
     end
 end
-
-desc "mac application settings"
-task "mac" do
-    DEST = File.join(PWD, "application")
-    Dir.foreach(DEST) do |file|
-      next if file[0] == "."
-      puts "sh #{DEST}/#{file}"
-      `sh #{DEST}/#{file}`
-    end
-end
