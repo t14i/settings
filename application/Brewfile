@@ -1,0 +1,96 @@
+
+# tap repositories and their packages
+
+tap caskroom/cask
+
+tap homebrew/core
+brew arp-scan
+brew autoconf
+brew autogen
+brew automake
+brew awscli
+brew bdw-gc
+brew cairo
+brew cloog
+brew cmake
+brew curl
+brew eigen
+brew fontconfig
+brew freetype
+brew gawk
+brew gcc
+brew gdbm
+brew gettext
+brew git
+brew glib
+brew gmp
+brew guile
+brew ilmbase
+brew imagemagick
+brew isl
+brew jo
+brew jpeg
+brew jq
+brew leptonica
+brew libevent
+brew libffi
+brew libmpc
+brew libpng
+brew libtiff
+brew libtool
+brew libunistring
+brew libxml2
+brew libxslt
+brew libyaml
+brew lv
+brew mad
+brew maven
+brew mecab
+brew mecab-ipadic
+brew mpfr
+brew nkf
+brew nmap
+brew oniguruma
+brew openexr
+brew openssl
+brew pcre
+brew peco
+brew pixman
+brew pkg-config
+brew pyenv
+brew pyenv-virtualenv
+brew rbenv
+brew rbenv-gemset
+brew readline
+brew ruby-build
+brew sox
+brew tmux
+brew tree
+brew vim
+brew watch
+brew wget
+brew xz
+brew zeromq
+brew zsh
+brew zsh-completions
+brew mas
+
+tap homebrew/dupes
+brew apple-gcc42
+brew libiconv
+
+tap osx-cross/avr
+brew avr-binutils
+
+tap rcmdnk/file
+brew brew-file
+
+# App Store applications
+appstore 1013897218 App Cleaner (3.0)
+appstore 672206759 Disk Diag (1.4)
+appstore 406056744 Evernote (6.10)
+appstore 409183694 Keynote (7.0.5)
+appstore 539883307 LINE (4.11.1)
+appstore 803453959 Slack (2.4.1)
+appstore 525912054 WiFi Signal (4.0.5)
+appstore 497799835 Xcode (8.1)
