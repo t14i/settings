@@ -2,6 +2,21 @@
 # tap repositories and their packages
 
 tap caskroom/cask
+cask android-studio
+cask atom
+cask charles
+cask docker
+cask dropbox
+cask firefox
+cask genymotion
+cask google-chrome
+cask iterm2
+cask java
+cask postman
+cask rubymine
+cask sequel-pro
+cask sketch
+cask sourcetree
 
 tap homebrew/core
 brew arp-scan
@@ -74,6 +89,7 @@ brew zeromq
 brew zsh
 brew zsh-completions
 brew mas
+brew fabric
 
 tap homebrew/dupes
 brew apple-gcc42
