@@ -8,6 +8,7 @@ cask charles
 cask docker
 cask dropbox
 cask firefox
+cask franz
 cask genymotion
 cask google-chrome
 cask iterm2

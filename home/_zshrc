@@ -53,6 +53,9 @@ alias su="su -l"
 
 alias vi="vim"
 
+alias bex="bundle exec"
+alias doco="docker-compose"
+
 ## Peco setting
 #
 function peco-select-history() {
