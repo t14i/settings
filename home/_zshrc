@@ -54,7 +54,7 @@ alias su="su -l"
 alias vi="vim"
 
 alias bex="bundle exec"
-alias doco="docker-compose"
+alias dc="docker-compose"
 
 ## Peco setting
 #
@@ -74,6 +74,11 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
+# url encode
+function urlencode {
+  echo "$1" | nkf -WwMQ | tr = %
+}
+
 # zsh completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
@@ -85,3 +90,9 @@ fi
 ## load user .zshrc configuration file
 #
 [ -f ${HOME}/.zshrc.local ] && source ${HOME}/.zshrc.local
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ttomoaki/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/ttomoaki/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ttomoaki/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/ttomoaki/google-cloud-sdk/completion.zsh.inc'; fi

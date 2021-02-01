@@ -1,48 +1,47 @@
 
 # tap repositories and their packages
 
-tap caskroom/cask
-cask android-studio
-cask atom
-cask charles
-cask docker
-cask dropbox
-cask firefox
-cask franz
-cask genymotion
-cask google-chrome
-cask iterm2
-cask java
-cask postman
-cask rubymine
-cask sequel-pro
-cask sketch
-cask sourcetree
-
 tap homebrew/core
+brew ansible
 brew arp-scan
+brew augeas
 brew autoconf
 brew autogen
 brew automake
 brew awscli
 brew bdw-gc
 brew cairo
+brew certbot
 brew cloog
 brew cmake
+brew cocoapods
 brew curl
+brew dialog
 brew eigen
+brew fabric
 brew fontconfig
 brew freetype
+brew fswatch
 brew gawk
 brew gcc
 brew gdbm
 brew gettext
+brew gifsicle
+brew gist
 brew git
 brew glib
 brew gmp
+brew gnutls
+brew go
+brew gradle
 brew guile
+brew httpie
+brew hugo
+brew icu4c
+brew ideviceinstaller
 brew ilmbase
 brew imagemagick
+brew ios-deploy
 brew isl
 brew jo
 brew jpeg
@@ -50,57 +49,120 @@ brew jq
 brew leptonica
 brew libevent
 brew libffi
+brew libiconv
+brew libimobiledevice
 brew libmpc
+brew libplist
 brew libpng
+brew libtasn1
 brew libtiff
 brew libtool
 brew libunistring
+brew libusb
 brew libxml2
 brew libxslt
 brew libyaml
+brew libzip
 brew lv
 brew mad
+brew mas
 brew maven
+brew md5sha1sum
 brew mecab
 brew mecab-ipadic
 brew mpfr
+brew mysql --client-only
+brew nettle
 brew nkf
 brew nmap
+brew node
+brew node-build
+brew nodenv
 brew oniguruma
 brew openexr
-brew openssl
+brew openssl@1.1
+brew p11-kit
 brew pcre
 brew peco
 brew pixman
 brew pkg-config
+brew portaudio
 brew pyenv
 brew pyenv-virtualenv
+brew python
+brew python@3.8
+brew qemu
 brew rbenv
 brew rbenv-gemset
 brew readline
 brew ruby-build
 brew sox
+brew sqlite
+brew teensy_loader_cli
+brew telnet
+brew terraform
 brew tmux
 brew tree
-brew vim
+brew unison
 brew watch
+brew watchman
 brew wget
 brew xz
+brew yarn
 brew zeromq
 brew zsh
 brew zsh-completions
-brew mas
-brew fabric
 
 tap homebrew/dupes
-brew apple-gcc42
-brew libiconv
+
+tap caskroom/cask
+cask android-studio
+cask charles
+cask dropbox
+cask franz
+cask google-chrome
+cask intellij-idea-ce
+cask java
+cask postman
+cask rubymine
+cask sidequest
+cask slack
+cask table-tool
+cask visual-studio-code
+cask zeplin
+
+tap caskroom/cask
+cask atom
+cask firefox
+cask google-hangouts
+cask iterm2
+cask sequel-pro
+cask sourcetree
+cask webstorm
 
 tap osx-cross/avr
 brew avr-binutils
 
 tap rcmdnk/file
 brew brew-file
+
+# Other Homebrew packages
+brew apple-gcc42
+brew chromedriver
+brew heroku
+brew mongodb
+brew openssl
+brew postgres
+brew usbmuxd
+
+# Other Cask applications
+cask docker
+cask genymotion
+cask haskell-platform
+cask ngrok
+cask robomongo
+cask sketch
+cask tunnelblick
 
 # App Store applications
 appstore 1013897218 App Cleaner (3.0)

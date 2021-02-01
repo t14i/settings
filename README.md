@@ -14,6 +14,12 @@ Initial setting for mac
 ----------------------
 change setting for track pad / short cut  
 install x code / command line tools  
+
+```
+xcode-select --install
+sudo xcodebuild -license
+```
+
 install brew / brew-file  
 
 ```

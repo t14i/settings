@@ -11,16 +11,23 @@
 [core]
 	editor = vim -c \"set fenc=utf-8\"
     pager  = lv -c
-	excludesfile = /Users/Tomoaki/.gitignore_global
+	excludesfile = /Users/ttomoaki/.gitignore_global
+	autoCRLF = true
 [alias]
     co=checkout
     br=branch
     st=status
+	showpr = "!f() { git log --merges --oneline --reverse --ancestry-path $1...master | grep 'Merge pull request #' | head -n 1; }; f"
 [url "https://github.com/"]
 	insteadOf = git://github.com/
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree 2.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
